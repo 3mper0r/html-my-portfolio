@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Merienda', cursive;
 }
 
 html {
@@ -39,22 +40,25 @@ li, a {
 
 body, main {
     background-color: #5F021F;
-    opacity: 0.9;
 }
 
 main {
-    background-color: #40F99B;
-    border-radius: 0.5rem;
-    margin: auto;
-    width: 50%;
-    font-family: 'Marienda', cursive;
-    margin-bottom: 100px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.headtitle {
+    width: 500px;
+    background-color: #E54B4B;
+    border-radius: 8px;
 }
 
 .headtitle h1 {
-    margin-top: 10rem;
+    color: #40F99B;
     text-align: center;
-    color: #E54B4B;
+    display: grid;
+    place-items: center;
 }
 
 p {
@@ -67,15 +71,16 @@ h2 {
     text-align: center;
     font-family: 'Marienda', cursive;
     color: #E54B4B;
+    padding: 10px;
 }
 
 .my-projects h2 {
-    color: #40F99B;
+    color: #003554;
 }
 
 .my-projects {
     background-color: #E54B4B;
-    padding: 50px;
+    padding: 40px;
 }
 
 .projects {
@@ -88,8 +93,9 @@ h2 {
 }
 
 .swine-meeper, .lottery-picker, .ios-stopwatch {
-    background-color: #40F99B;
-    border: 1px solid;
+    background-color: #5F021F;
+    color: #40F99B;
+    border-radius: 8px;
     display: grid;
     gap: 10px;
 }
@@ -107,58 +113,31 @@ h2 {
     place-items: center;
     background-color: #003554;
     align-content: center;
-    padding: 50px;
+    padding: 30px;
 }
 
-.hoxton {
-    border: solid 1px;
-    background-color: #40F99B;
-}
-
-.boolean {
-    border: solid 1px;
-    background-color: #40F99B;
-}
-
-.flatiron-master {
-    border: solid 1px;
-    background-color: #40F99B;
-}
-
-.flatiron-lead {
-    border: solid 1px;
-    background-color: #40F99B;
-}
-
-.hoxton p {
-    display: inline-grid;
-    justify-content: center;
-}
-
-.boolean p {
-    display: inline-grid;
-}
-
-.flatiron-master p {
-    display: inline-grid;
-}
-
-.flatiron-lead p {
-    display: inline-grid;
-}
-
-.back-to-top {
-    width: auto;
-    text-align: center;
+.hoxton, .boolean, .flatiron-master, .flatiron-lead {
+    border-radius: 8px;
+    color: #40F99B;
     background-color: #5F021F;
 }
 
-.back-to-top a {
+.hoxton p, .boolean p, .flatiron-lead p, .flatiron-master p {
+    display: inline-grid;
+}
+
+#back-to-top {
+    width: auto;
+    text-align: center;
+    background-color: black;
+}
+
+#back-to-top a {
     color: #40F99B;
 }
 
 .project-title {
-    color: #5F021F;
+    color: #40F99B;
     text-align: start;
     padding: 5px 0px 0px 10px;
 }
@@ -168,6 +147,10 @@ h2 {
     color: white;
     text-align: center;
     margin: 5px;
+}
+
+.ios-stopwatch a {
+    height: 32px;
 }
 
 .scroll-down a {
